@@ -1,0 +1,155 @@
+{% include 'nav.html' %}
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="{% static 'images/mtn.ico' %}"
+      type="image/x-icon"
+    />
+    <!-- Icon - IconMonster -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css"
+    />
+    <!-- Mumble UI -->
+    <link rel="stylesheet" href="{% static 'uikit/styles/uikit.css' %}" />
+    <!-- Dev Search UI -->
+    <link rel="stylesheet" href="{% static 'styles/app.css'  %}" />
+
+    <title>mtn</title>
+  </head>
+
+  <body>
+    {% block content %}
+
+    <div class="flat-section-title text-center">
+      <h2 class="g5h2-Sho">
+        A simpler, cheaper way to grow your business, <br />
+        connect more and change the game.
+      </h2>
+
+      <p>
+        Avoid the admin and document piles and get access to special rates: all
+        you need is your ID and proof of business ownership or affiliation.
+      </p>
+      <a type="submit" class="btn btn--sub btn--lg" href="{% url 'register' %}"
+        >REGISTER NOW</a
+      >
+    </div>
+
+    <div class="container">
+      <div class="grid grid--three">
+        <div class="column card" style="width: 300px">
+          <div class="col-md-12 col-lg-12">
+            <div
+              class="mile-box2 text-center wow fadeIn resp-remove-margin-bottom"
+              data-wow-delay="0.3s"
+            >
+              <div class="info-box-content">
+                <p class="sectionTitl">SMALL</p>
+                <h4 class="mile-title">5 GB + 50min</h4>
+
+                <hr class="shortLine" />
+
+                <!--<h4 class="router-title">MyMTN Home Fixed LTE Uncapped</h4>-->
+                <p class="desData">
+                  3 GB Anytime data + 2 GB Business &amp; Social bundle + 50min
+                  voice
+                </p>
+
+                <hr class="shortLine" />
+              </div>
+
+              <div class="bottom-left">
+                <h4>R49</h4>
+                <span>Valid for 7 days</span>
+                <a
+                  class="TnCtag"
+                  href="https://www.mtn.co.za/Pages/Termsandconditions.aspx?pageid=1454"
+                  >*T&amp;C’s apply</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column card" style="width: 300px">
+          <div class="col-md-12 col-lg-12">
+            <div
+              class="mile-box2 text-center wow fadeIn resp-remove-margin-bottom"
+              data-wow-delay="0.3s"
+            >
+              <div class="info-box-content">
+                <p class="sectionTitl">MEDIUM</p>
+                <h4 class="mile-title">10 GB + 100min</h4>
+
+                <hr class="shortLine" />
+
+                <!--<h4 class="router-title">MyMTN Home Fixed LTE Uncapped</h4>-->
+                <p class="desData">
+                  5 GB Anytime data + 5 GB Business &amp; Social bundle + 100min
+                  voice
+                </p>
+
+                <hr class="shortLine" />
+              </div>
+
+              <div class="bottom-left">
+                <h4>R99</h4>
+                <span>Valid for 14 days</span>
+                <a
+                  class="TnCtag"
+                  href="https://www.mtn.co.za/Pages/Termsandconditions.aspx?pageid=1454"
+                  >*T&amp;C’s apply</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column card" style="width: 300px">
+          <div class="col-md-12 col-lg-12">
+            <div
+              class="mile-box2 text-center wow fadeIn resp-remove-margin-bottom"
+              data-wow-delay="0.3s"
+            >
+              <div class="info-box-content">
+                <p class="sectionTitl">LARGE</p>
+                <h4 class="mile-title">25 GB + 200min</h4>
+
+                <hr class="shortLine" />
+
+                <!--<h4 class="router-title">MyMTN Home Fixed LTE Uncapped</h4>-->
+                <p class="desData">
+                  20 GB Anytime &amp; Night data + 5 GB Business &amp; Social
+                  bundle + 200min voice
+                </p>
+
+                <hr class="shortLine" />
+              </div>
+
+              <div class="bottom-left">
+                <h4>R199</h4>
+                <span>Valid for 30 days</span>
+                <a
+                  class="TnCtag"
+                  href="https://www.mtn.co.za/Pages/Termsandconditions.aspx?pageid=1454"
+                  >*T&amp;C’s apply</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include 'footer.html' %} {% endblock %}
+  </body>
+</html>
